@@ -99,7 +99,7 @@ function nextBoards(board){
     if(firstEmpty != undefined){
         const y = firstEmpty[0];
         const x = firstEmpty[1];
-        for(let i = 1; i <9; i++){
+        for(let i = 1; i <= 9; i++){
             var newBoard = [...board];
             var row = [...newBoard[y]];
             row[x]=i;
@@ -188,4 +188,4 @@ function boxesGood(board){
 
 console.log(solveBoard(board1));
 console.log(solveBoard(board2));
-console.log(solveBoard(board3));
+// console.log(solveBoard(board3));
